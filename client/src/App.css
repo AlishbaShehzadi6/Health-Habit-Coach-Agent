@@ -1,0 +1,92 @@
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: center;      /* vertical center */
+  background: #eef2f7;      /* light background */
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  width: 90%; 
+  padding: 24px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+/* Flexbox container for cards */
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Each card */
+.card {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #444;
+  font-size: 20px;
+}
+
+/* Buttons */
+.btn {
+  background: #4CAF50;
+  border: none;
+  color: #fff;
+  padding: 10px 16px;
+  margin-top: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+/* Input fields */
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Result box */
+.result {
+  margin-top: 15px;
+  padding: 10px;
+  background: #e9f7ef;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  color: #155724;
+}
+
+/* ✅ Responsive: stack cards on small screens */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+}
